@@ -17,7 +17,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="6dp"
             android:gravity="center_vertical"
-            android:text="选择器样式："
+            android:text="Selection system："
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -31,20 +31,20 @@
                 android:id="@+id/rb_redBook"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="小红书剪裁" />
+                android:text="Red book" />
 
             <RadioButton
                 android:id="@+id/rb_weChat"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="微信样式" />
+                android:text="WeChat style" />
 
             <RadioButton
                 android:id="@+id/rb_custom"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="自定义样式" />
+                android:text="Custom" />
         </RadioGroup>
 
         <TextView
@@ -52,7 +52,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="6dp"
             android:gravity="center_vertical"
-            android:text="选择器文件加载类型："
+            android:text="Selection text list type："
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -182,7 +182,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="6dp"
             android:gravity="center_vertical"
-            android:text="相关属性："
+            android:text="mutual attribute："
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -195,21 +195,21 @@
                 android:id="@+id/cb_showCamera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="显示拍照" />
+                android:text="Show Camera" />
 
             <CheckBox
                 android:id="@+id/cb_showOriginal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:text="显示原图" />
+                android:text="Show Original" />
 
             <CheckBox
                 android:id="@+id/cb_closePreview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:text="关闭预览" />
+                android:text="Close Preview" />
 
         </LinearLayout>
 
@@ -227,13 +227,13 @@
                     android:id="@+id/cb_videoSingle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="只能选择一个视频" />
+                        android:text="Single Video" />
 
                 <CheckBox
                     android:id="@+id/cb_imageOrVideo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="只能选择图片或视频" />
+                    android:text="Image or Video" />
 
             </LinearLayout>
 
@@ -242,7 +242,7 @@
                 android:id="@+id/cb_previewCanEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="预览是否支持编辑"
+                android:text="Preview Can Edit"
                 android:visibility="gone" />
         </LinearLayout>
 
@@ -256,19 +256,19 @@
                 android:id="@+id/cb_singleAutoComplete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="单选时,点击item直接回调,无需选中" />
+                android:text="At the time of selection, point return item direct return, no demand selection" />
 
             <CheckBox
                 android:id="@+id/cb_filterVideoPreview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="大图预览时，过滤掉视频预览" />
+                android:text="When you take a long walk, take a long walk" />
 
             <CheckBox
                 android:id="@+id/cb_autoJumpAloha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="图片选择完是否调用自定义的多图剪裁页面(AlohaActivity)" />
+                android:text="Screen selection is complete or not.(AlohaActivity)" />
 
         </LinearLayout>
 
@@ -278,7 +278,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="6dp"
             android:gravity="center_vertical"
-            android:text="连续选择时已选中列表状态："
+            android:text="Continuation selection time selection middle row table status："
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -293,19 +293,19 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="重新选择" />
+                android:text="New" />
 
             <RadioButton
                 android:id="@+id/rb_shield"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="屏蔽已选择" />
+                android:text="screen selection" />
 
             <RadioButton
                 android:id="@+id/rb_save"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="记录已选择" />
+                android:text="Record selection" />
 
         </RadioGroup>
 
@@ -314,7 +314,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="6dp"
             android:gravity="center_vertical"
-            android:text="打开类型："
+            android:text="Expanded type："
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -331,7 +331,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:checked="true"
-                android:text="选择器-多选" />
+                android:text="multi-selection" />
 
             <RadioButton
                 android:id="@+id/rb_single"
@@ -339,7 +339,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:checked="false"
-                android:text="选择器-单选" />
+                android:text="Selection device-Select" />
 
             <RadioButton
                 android:id="@+id/rb_crop"
@@ -347,7 +347,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:checked="false"
-                android:text="选择器-剪裁" />
+                android:text="Selection tool - Crop" />
 
         </RadioGroup>
 
@@ -363,21 +363,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="直接剪裁" />
+                android:text="Auto Crop" />
 
             <RadioButton
                 android:id="@+id/rb_takePhoto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="直接拍照" />
+                android:text="Take Photo" />
 
             <RadioButton
                 android:id="@+id/rb_takePhotoAndCrop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="直接拍照并剪裁" />
+                android:text="Take Pic and Crop" />
         </RadioGroup>
 
         <LinearLayout
@@ -392,7 +392,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:gravity="center_vertical"
-                android:text="剪裁参数："
+                android:text="Crop Number："
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -405,19 +405,19 @@
                     android:id="@+id/cb_circle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="开启圆形剪裁" />
+                    android:text="Circle" />
 
                 <CheckBox
                     android:id="@+id/cb_gap"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="开启留白剪裁" />
+                    android:text="Gap" />
 
                 <CheckBox
                     android:id="@+id/cb_gapBackground"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="留白透明背景" />
+                    android:text="Gap Background" />
             </LinearLayout>
 
 
@@ -473,7 +473,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="8dp"
                     android:gravity="center"
-                    android:text="剪裁框间距:0" />
+                    android:text="Crop Margin:0" />
 
                 <SeekBar
                     android:id="@+id/mMarginSeekBar"

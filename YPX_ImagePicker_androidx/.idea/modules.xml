@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/YImagePicker-YPX_ImagePicker_androidx.iml" filepath="$PROJECT_DIR$/YImagePicker-YPX_ImagePicker_androidx.iml" group="YPX_ImagePicker_androidx" />
-      <module fileurl="file://$PROJECT_DIR$/YPX_ImagePicker_androidx.iml" filepath="$PROJECT_DIR$/YPX_ImagePicker_androidx.iml" group="YPX_ImagePicker_androidx" />
-      <module fileurl="file://$PROJECT_DIR$/app/YPX_ImagePicker_androidx-app.iml" filepath="$PROJECT_DIR$/app/YPX_ImagePicker_androidx-app.iml" group="YPX_ImagePicker_androidx/app" />
-      <module fileurl="file://$PROJECT_DIR$/imagepicker/YPX_ImagePicker_androidx-imagepicker.iml" filepath="$PROJECT_DIR$/imagepicker/YPX_ImagePicker_androidx-imagepicker.iml" group="YPX_ImagePicker_androidx/imagepicker" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="YPX_ImagePicker_androidx/app" />
-      <module fileurl="file://$PROJECT_DIR$/imagepicker/imagepicker.iml" filepath="$PROJECT_DIR$/imagepicker/imagepicker.iml" group="YPX_ImagePicker_androidx/imagepicker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YPX_ImagePicker_androidx.iml" filepath="$PROJECT_DIR$/.idea/modules/YPX_ImagePicker_androidx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/YPX_ImagePicker_androidx.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/YPX_ImagePicker_androidx.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/YPX_ImagePicker_androidx.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/YPX_ImagePicker_androidx.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/YPX_ImagePicker_androidx.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/YPX_ImagePicker_androidx.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/YPX_ImagePicker_androidx.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/YPX_ImagePicker_androidx.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/YPX_ImagePicker_androidx.imagepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/YPX_ImagePicker_androidx.imagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/YPX_ImagePicker_androidx.imagepicker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/YPX_ImagePicker_androidx.imagepicker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/YPX_ImagePicker_androidx.imagepicker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/YPX_ImagePicker_androidx.imagepicker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/YPX_ImagePicker_androidx.imagepicker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/YPX_ImagePicker_androidx.imagepicker.unitTest.iml" />
     </modules>
   </component>
 </project>

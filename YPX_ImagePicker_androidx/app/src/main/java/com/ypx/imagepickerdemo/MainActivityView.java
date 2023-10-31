@@ -260,7 +260,7 @@ public class MainActivityView {
             } else if (seekBar == mYSeekBar) {
                 mCropY.setText(String.format("cropY: %d", progress));
             } else if (seekBar == mMarginSeekBar) {
-                mCropMargin.setText(String.format("剪裁框间距: %d", progress));
+                mCropMargin.setText(String.format("Crop progress: %d", progress));
             }
         }
 
