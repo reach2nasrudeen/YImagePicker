@@ -1,5 +1,9 @@
 <resources>
 
+    <string name="app_name">YImagePicker</string>
+    <string name="picker_str_error">Error</string>
+    <string name="picker_str_sure">Sure</string>
+
     <!--  title of activity -->
     <string name="picker_str_title_all">VideoAndPicture</string>
     <string name="picker_str_title_video">VideoSelect</string>

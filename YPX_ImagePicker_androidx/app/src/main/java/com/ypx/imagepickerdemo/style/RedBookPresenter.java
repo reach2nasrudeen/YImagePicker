@@ -83,7 +83,7 @@ public class RedBookPresenter implements IPickerPresenter {
             return;
         }
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setMessage("最多选择" + maxCount + "个文件");
+        builder.setMessage("Most choices" + maxCount + "files");
         builder.setPositiveButton(R.string.picker_str_sure,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -97,7 +97,7 @@ public class RedBookPresenter implements IPickerPresenter {
 
     @Override
     public DialogInterface showProgressDialog(@Nullable Activity activity, ProgressSceneEnum progressSceneEnum) {
-        return ProgressDialog.show(activity, null, progressSceneEnum == ProgressSceneEnum.crop ? "正在剪裁..." : "正在加载...");
+        return ProgressDialog.show(activity, null, progressSceneEnum == ProgressSceneEnum.crop ? "Cutting..." : "loading...");
     }
 
     @Override
@@ -120,7 +120,7 @@ public class RedBookPresenter implements IPickerPresenter {
         }
 
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-        builder.setMessage("是否放弃选择？");
+        builder.setMessage("Whether to give up the choice？");
         builder.setPositiveButton(R.string.picker_str_sure,
                 new DialogInterface.OnClickListener() {
                     @Override
