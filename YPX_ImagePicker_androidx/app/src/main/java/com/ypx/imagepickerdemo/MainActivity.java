@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityView.
         ImagePicker.withCrop(redBookPresenter)//设置presenter
                 .setMaxCount(count)//设置选择数量
                 .showCamera(isShowCamera)//设置显示拍照
-                .setColumnCount(4)//设置列数
+                .setColumnCount(3)//设置列数
                 .mimeTypes(mimeTypes)//设置需要加载的文件类型
                 // .filterMimeType(MimeType.GIF)//设置需要过滤掉的文件类型
                 .assignGapState(false)
@@ -122,6 +122,9 @@ public class MainActivity extends AppCompatActivity implements MainActivityView.
 
                     @Override
                     public void onImagePickComplete(ArrayList<ImageItem> items) {
+                        for (ImageItem item : items) {
+                            System.out.println("item---->" + item.toString());
+                        }
                         //图片剪裁回调，主线 程
                         //注意：剪裁回调里的ImageItem中getCropUrl()才是剪裁过后的图片地址
                         mainActivityView.notifyImageItemsCallBack(items);

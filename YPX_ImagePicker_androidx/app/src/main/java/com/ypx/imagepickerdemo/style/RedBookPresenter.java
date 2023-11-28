@@ -40,11 +40,14 @@ public class RedBookPresenter implements IPickerPresenter {
     public void displayImage(View view, ImageItem item, int size, boolean isThumbnail) {
         Object object = item.getUri() != null ? item.getUri() : item.path;
 
-        Glide.with(view.getContext()).load(object).apply(new RequestOptions()
-                .format(isThumbnail ? DecodeFormat.PREFER_RGB_565 : DecodeFormat.PREFER_ARGB_8888))
+        Glide.with(view.getContext())
+                .load(object)
+                .apply(new RequestOptions()
+                        .format(isThumbnail ? DecodeFormat.PREFER_RGB_565 : DecodeFormat.PREFER_ARGB_8888))
                 .override(isThumbnail ? size : Target.SIZE_ORIGINAL)
                 .into((ImageView) view);
     }
+
     /**
      * @param context 上下文
      * @return PickerUiConfig UI配置类
@@ -163,7 +166,7 @@ public class RedBookPresenter implements IPickerPresenter {
      * @return 是否拦截
      */
     @Override
-    public boolean interceptItemClick(@Nullable Activity activity, ImageItem imageItem, ArrayList<ImageItem> selectImageList, ArrayList<ImageItem> allSetImageList, BaseSelectConfig selectConfig, PickerItemAdapter adapter,boolean isClickCheckBox, @Nullable IReloadExecutor reloadExecutor) {
+    public boolean interceptItemClick(@Nullable Activity activity, ImageItem imageItem, ArrayList<ImageItem> selectImageList, ArrayList<ImageItem> allSetImageList, BaseSelectConfig selectConfig, PickerItemAdapter adapter, boolean isClickCheckBox, @Nullable IReloadExecutor reloadExecutor) {
         return false;
     }
 

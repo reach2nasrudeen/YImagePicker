@@ -403,4 +403,31 @@ public class ImageItem implements Serializable, Parcelable {
                 && (uriPath == null || uriPath.length() == 0);
     }
 
+
+    @Override
+    public String toString() {
+        return "ImageItem{" +
+                "id=" + id +
+                ", width=" + width +
+                ", height=" + height +
+                ", time=" + time +
+                ", duration=" + duration +
+                ", mimeType='" + mimeType + '\'' +
+                ", timeFormat='" + timeFormat + '\'' +
+                ", durationFormat='" + durationFormat + '\'' +
+                ", isVideo=" + isVideo +
+                ", isOriginalImage=" + isOriginalImage +
+                ", displayName='" + displayName + '\'' +
+                ", videoImageUri='" + videoImageUri + '\'' +
+                ", imageFilterPath='" + imageFilterPath + '\'' +
+                ", path='" + path + '\'' +
+                ", uriPath='" + uriPath + '\'' +
+                ", cropUrl='" + cropUrl + '\'' +
+                ", isSelect=" + isSelect +
+                ", isPress=" + isPress +
+                ", selectIndex=" + selectIndex +
+                ", cropMode=" + cropMode +
+                ", cropRestoreInfo=" + cropRestoreInfo +
+                '}';
+    }
 }
