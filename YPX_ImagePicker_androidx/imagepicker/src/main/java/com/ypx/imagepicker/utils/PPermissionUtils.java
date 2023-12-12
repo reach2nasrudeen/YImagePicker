@@ -40,8 +40,8 @@ public class PPermissionUtils {
 
     public static boolean hasStoragePermissions(Activity activity) {
         if (Build.VERSION.SDK_INT >= 23) {
-            if (ContextCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                activity.requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, ImagePicker.REQ_STORAGE);
+            if (ContextCompat.checkSelfPermission(activity, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                activity.requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, ImagePicker.REQ_STORAGE);
                 return false;
             }
         }

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.graphics.Color;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -528,6 +529,9 @@ public class MainActivityView {
     }
 
     public void notifyImageItemsCallBack(ArrayList<ImageItem> imageItems) {
+        for (ImageItem imageItem : imageItems) {
+            Log.e("imageItem", ""+imageItem.toString());
+        }
         //图片选择回调，主线程
         if (mRbSave.isChecked()) {
             picList.clear();
