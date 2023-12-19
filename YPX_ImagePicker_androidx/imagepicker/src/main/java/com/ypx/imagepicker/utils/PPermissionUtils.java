@@ -123,7 +123,7 @@ public class PPermissionUtils {
         try {
             Intent intent = new Intent("com.meizu.safe.security.SHOW_APPSEC");
             intent.addCategory(Intent.CATEGORY_DEFAULT);
-            intent.putExtra("packageName", BuildConfig.APPLICATION_ID);
+            intent.putExtra("packageName", BuildConfig.LIBRARY_PACKAGE_NAME);
             context.startActivity(intent);
         } catch (Exception e) {
             e.printStackTrace();

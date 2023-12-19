@@ -3,10 +3,9 @@
     <string name="picker_str_error">Error</string>
     <string name="picker_str_sure">Sure</string>
 
-<!--    <string name="picker_str_title_all">在string中修改文本</string>-->
-<!--    <string name="picker_str_title_right">下一步</string>-->
-<!--    <string name="picker_str_time_format">yyyy年MM月</string>-->
-
+    <!--    <string name="picker_str_title_all">在string中修改文本</string>-->
+    <!--    <string name="picker_str_title_right">下一步</string>-->
+    <!--    <string name="picker_str_time_format">yyyy年MM月</string>-->
 
 
     <!--  title of activity -->
