@@ -60,7 +60,7 @@ public class RedBookPresenter implements IPickerPresenter {
         uiConfig.setStatusBarColor(Color.BLACK);
         uiConfig.setPickerBackgroundColor(Color.BLACK);
         uiConfig.setFolderListOpenDirection(PickerUiConfig.DIRECTION_TOP);
-        uiConfig.setFolderListOpenMaxMargin(PViewSizeUtils.dp(context, 200));
+        uiConfig.setFolderListOpenMaxMargin(PViewSizeUtils.dp(context, 150));
 
         uiConfig.setPickerUiProvider(new RedBookUiProvider());
         return uiConfig;
