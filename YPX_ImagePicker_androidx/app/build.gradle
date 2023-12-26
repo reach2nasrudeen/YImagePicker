@@ -18,8 +18,8 @@ android {
     }
 
     //打包改名
-    android.applicationVariants.all { variant ->
-        variant.outputs.all {
+    android.applicationVariants.configureEach { variant ->
+        variant.outputs.configureEach {
             // 名称_android_版本号.apk
             outputFileName = "picker_${defaultConfig.versionName}.apk"
         }
