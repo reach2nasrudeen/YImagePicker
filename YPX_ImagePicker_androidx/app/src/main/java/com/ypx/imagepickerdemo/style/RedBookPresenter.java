@@ -55,7 +55,7 @@ public class RedBookPresenter implements IPickerPresenter {
     @Override
     public PickerUiConfig getUiConfig(Context context) {
         PickerUiConfig uiConfig = new PickerUiConfig();
-        uiConfig.setThemeColor(Color.RED);
+        uiConfig.setThemeColor(Color.GRAY);
         uiConfig.setShowStatusBar(false);
         uiConfig.setStatusBarColor(Color.BLACK);
         uiConfig.setPickerBackgroundColor(Color.BLACK);

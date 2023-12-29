@@ -129,6 +129,7 @@ public class PickerItemAdapter extends RecyclerView.Adapter<PickerItemAdapter.It
                 if (onActionResult != null) {
                     isPreformClick = false;
                     onActionResult.onClickItem(imageItem, position, finalDisableCode);
+                    onActionResult.onCheckItem(imageItem, finalDisableCode);
                 }
             }
         });

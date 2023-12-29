@@ -28,7 +28,7 @@ public class RedBookUiProvider extends PickerUiProvider {
     @Override
     public PickerFolderItemView getFolderItemView(Context context) {
         WXFolderItemView itemView = (WXFolderItemView) super.getFolderItemView(context);
-        itemView.setIndicatorColor(Color.RED);
+        itemView.setIndicatorColor(Color.GRAY);
         itemView.setBackgroundColor(Color.BLACK);
         itemView.setNameTextColor(Color.WHITE);
         itemView.setCountTextColor(Color.parseColor("#50F5f5f5"));
