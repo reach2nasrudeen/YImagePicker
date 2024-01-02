@@ -1,5 +1,8 @@
 package com.ypx.imagepicker.utils;
 
+import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
+import static android.Manifest.permission.READ_MEDIA_IMAGES;
+
 import android.Manifest;
 import android.app.Activity;
 import android.content.ComponentName;
@@ -13,6 +16,8 @@ import android.os.Build;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.content.ContextCompat;
 
+import android.os.Build.VERSION_CODES;
+import android.provider.Settings;
 import android.text.TextUtils;
 
 import com.ypx.imagepicker.BuildConfig;
@@ -39,9 +44,10 @@ public class PPermissionUtils {
     }
 
     public static boolean hasStoragePermissions(Activity activity) {
+        String permission = Build.VERSION.SDK_INT >= VERSION_CODES.TIRAMISU ? READ_MEDIA_IMAGES : READ_EXTERNAL_STORAGE;
         if (Build.VERSION.SDK_INT >= 23) {
-            if (ContextCompat.checkSelfPermission(activity, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                activity.requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, ImagePicker.REQ_STORAGE);
+            if (ContextCompat.checkSelfPermission(activity, permission) != PackageManager.PERMISSION_GRANTED) {
+                activity.requestPermissions(new String[]{permission}, ImagePicker.REQ_STORAGE);
                 return false;
             }
         }
@@ -154,10 +160,9 @@ public class PPermissionUtils {
      * @return
      */
     private Intent getAppDetailSettingIntent() {
-        Intent localIntent = new Intent();
-        localIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        localIntent.setAction("android.settings.APPLICATION_DETAILS_SETTINGS");
-        localIntent.setData(Uri.fromParts("package", context.getPackageName(), null));
+        Intent localIntent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+        Uri uri = Uri.fromParts("package", context.getPackageName(), null);
+        localIntent.setData(uri);
         return localIntent;
     }
 

@@ -1,9 +1,13 @@
 package com.ypx.imagepicker.activity;
 
+import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
+import static android.Manifest.permission.READ_MEDIA_IMAGES;
+
 import android.Manifest;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -196,9 +200,9 @@ public abstract class PBaseLoaderFragment extends Fragment implements ICameraExe
         if (getActivity() == null) {
             return;
         }
-        if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQ_STORAGE);
+        String permission = Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU ? READ_MEDIA_IMAGES : READ_EXTERNAL_STORAGE;
+        if (ContextCompat.checkSelfPermission(getActivity(), permission) != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(new String[]{permission}, REQ_STORAGE);
         } else {
             //从媒体库拿到文件夹列表
             ImagePicker.provideMediaSets(getActivity(), getSelectConfig().getMimeTypes(), new MediaSetsDataSource.MediaSetProvider() {
