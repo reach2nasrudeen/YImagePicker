@@ -118,7 +118,7 @@ public class RedBookPresenter implements IPickerPresenter {
      */
     @Override
     public boolean interceptPickerCancel(final Activity activity, ArrayList<ImageItem> selectedList) {
-        if (activity == null || activity.isFinishing() || activity.isDestroyed()) {
+       /* if (activity == null || activity.isFinishing() || activity.isDestroyed()) {
             return false;
         }
 
@@ -141,7 +141,8 @@ public class RedBookPresenter implements IPickerPresenter {
                 });
         AlertDialog dialog = builder.create();
         dialog.show();
-        return true;
+        return true;*/
+        return false;
     }
 
     /**
